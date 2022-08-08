@@ -13,6 +13,11 @@ const connect = function() {
     console.log(data);
   });
   
+  conn.on("connect", (client) => {
+    console.log("Successfully connected to game server");
+    conn.write("Name: SNK");
+  });
+
 
   return conn;
 };

@@ -14,6 +14,9 @@ const connect = function() {
     console.log(data);
   });
   
+  // sends a message to player when joining.
+  // when joining, the player may add their initals to
+  // to name their snake. (node play.js LHL)
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write(`Name: ${name}`);

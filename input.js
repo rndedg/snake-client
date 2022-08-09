@@ -1,5 +1,7 @@
 const { moveUpKey, moveDownKey, moveLeftKey, moveRightKey } = require("./constants");
 
+
+// Setting up connection
 let connection;
 
 const setupInput = (conn) => {
@@ -12,6 +14,7 @@ const setupInput = (conn) => {
   return stdin;
 };
 
+// Managing player's input for controlling snake
 const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();

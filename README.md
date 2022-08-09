@@ -25,3 +25,7 @@ You can also send a few messages to other players.
 - F will send "Oh no!"
 - G will send "GG!"
 - T will send "Take that!"
+
+## Note
+
+I have added the only server file that I modified to add broadcast message of "A new player has joined!" when another player enters the game. The lines I added are from 67-69.
